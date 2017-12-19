@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" user-scalable="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body, table, td, p, a, li {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        a {
+            word-wrap: break-word;
+        }
+
+        p {
+            -webkit-margin-before:0;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .ReadMsgBody {
+            width:100%;
+            background-color: #eeeeee;
+        }
+
+        .ExternalClass {
+            width: 100%;
+            background-color: #eeeeee;
+        }
+
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .ExternalClass * {
+            line-height: 100%;
+        }
+
+        @media only screen and (max-width: 540px) {
+
+            .main{ width:100% !important; min-width: 200px !important; }
+            .logo-img{ width:100% !important; float: none; margin-bottom: 15px;}
+            .logo-img td { text-align: center !important;}
+            .logo-title { width:100% !important; float: none;}
+            .logo-title td { text-align: center; height: auto}
+            .logo-title h1 { font-size: 24px !important; }
+            .logo-title h2 { font-size: 18px !important; }
+            .header-img img { width:100% !important; height:auto !important; }
+            .title { padding-left: 25px !important; padding-right: 25px !important; }
+            .title h1 { font-size: 24px !important; }
+            td.block-text { padding-left: 25px !important; padding-right: 25px !important; }
+            .block-text h2 { font-size: 20px !important; line-height: 170% !important; }
+            .block-text p { font-size: 16px !important; line-height: 170% !important; }
+            .block-text li { font-size: 16px !important; line-height: 170% !important; }
+            .two-columns { padding-left: 25px !important; padding-right: 25px !important; }
+            .text-column { width:100% !important; float: none; margin-bottom: 15px;}
+            .image-caption { padding-left: 25px !important; padding-right: 25px !important; }
+            .image-caption-container { width:100% !important;}
+            .image-caption-column { width:100% !important; float: none;}
+            .image-caption-column-text { width:100% !important; float: none;}
+            .image-caption-content img { width:100% !important; height:auto !important;}
+            .image-caption-content h2 { font-size: 20px !important; line-height: 170% !important; }
+            .image-caption-content p { font-size: 16px !important; line-height: 170% !important; }
+            .image-caption-top-gap { height: 15px !important; }
+            .image-caption-bottom-gap { height: 5px !important; }
+
+            .text { width:100% !important; }
+            .text p { font-size: 16px !important; line-height: 170% !important; }
+            .text h2 { font-size: 20px !important; line-height: 170% !important; }
+            .gap { display:none; }
+            .header { padding: 25px 25px 25px 25px !important; }
+            .header h1 { font-size: 24px !important; }
+            .header h2 { font-size: 20px !important; }
+
+            .footer { padding-left: 25px !important; padding-right: 25px !important; }
+            .footer p { font-size: 13px !important; }
+            .footer-side { width: 100% !important; float: none !important; }
+            .footer-side { text-align: center !important; }
+            .social-links { text-align: center !important; }
+            .footer-social-icons { float: none !important; margin: 0px auto !important; }
+            .social-icon-link { padding: 0px 5px !important; }
+
+            .image img { width:100% !important; height:auto !important;}
+            .image { padding-left: 25px !important; padding-right: 25px !important; }
+            .image-full img { width:100% !important; height:auto !important; }
+            .image-full { padding-left: 0px !important; padding-right: 0px !important; }
+            .image-group img { width:100% !important; height:auto !important; margin: 15px 0px 15px 0px !important; }
+            .image-group { padding-left: 25px !important; padding-right: 25px !important; }
+            .image-in-table { width:100% !important; float: none; margin-bottom: 15px;}
+            .image-in-table td { width:100% !important; padding-right: 0px !important;}
+            .image-in-table img { width:100% !important; height:auto !important; }
+            .image-in-table table {float: none !important; margin: 0 auto;}
+            .image-text { padding-left: 25px !important; padding-right: 25px !important; }
+            .image-text p { font-size: 16px !important; line-height: 170% !important; }
+            .divider-simple { padding-left: 25px !important; padding-right: 25px !important; }
+            .divider-full { padding-left: 0px !important; padding-right: 0px !important; }
+            .social { padding-left: 25px !important; padding-right: 25px !important; }
+            .preheader { display:none; }
+            .preheader-gap { display:none; }
+            .preheader-link { display:none; }
+            .preheader-text { width:100%; }
+            .buttons { padding-left: 25px !important; padding-right: 25px !important; }
+            .button { width:100% !important; float: none; }
+            .content-buttons { padding-left: 25px !important; padding-right: 25px !important; }
+            .buttons-full-width { padding-left: 15px !important; padding-right: 15px !important; }
+            .buttons-full-width a { padding-left: 0px !important; padding-right: 0px !important; }
+            .buttons-full-width span {/* width:100% !important; */padding-left: 0px !important; padding-right: 0px !important; }
+            .buttons-full-width td {display: inline !important}
+
+            .content { width:100% !important; float: none !important;}
+            .gallery-image { width:100% !important; padding: 0px !important;}
+            .social { width: 100%!important; text-align: center!important; }
+            .links { width: 100%!important; }
+            .links td { text-align: center!important; }
+            .footer-btn { text-align: center!important; width: 100%!important; margin-bottom: 10px; }
+            .footer-btn-wrap { margin-bottom: 0px; width: 100%!important; }
+            .head-social { width: 100%!important; text-align: center!important; padding-top: 20px; }
+            .head-logo { width: 100%!important; text-align: center!important; }
+            .header-nav { display: none; }
+            .responsive-cell {display: block;}
+            .image-caption {padding: 0px!important;}
+            .image-group { padding: 0px!important; }
+            .image-group-column { width:100% !important; float: none;}
+            .image-group-column-text { width:100% !important; float: none;}
+            .tableText { padding-right: 25px!important; padding-left: 25px!important;}
+            .textbuttonsimg {width: 65% !important; margin: 0 auto;}
+        }
+
+    </style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: #eeeeee; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 21px; color: #000000;">
+    <tbody>
+    <tr>
+        <td width="100%" id="primary" class="main demo" align="center" valign="top">
+            <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; display: table;" data-type="image" id="09df0a4a-a727-5435-43be-2113f90deb76">
+                <tbody>
+                <tr>
+                    <td align="center" style="padding: 37px 0px 2px;" class="image"><img class="" border="0" align="one_image" style="display: block; max-width: 100px;" alt="" src="https://agilecrm.s3.amazonaws.com/editor/email/betcart/vm_logo_jpg_1501927021479.jpg" width="100" height="50" data-maxwidth="640" id="93797f42-6854-f926-b6f4-d860e2699863" tabindex="0" /></td>
+                </tr>
+                </tbody>
+            </table>
+            <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #ffffff; display: table;" align="center" data-type="text-block" id="562475a7-2f27-e9f7-9110-83ef176ea8e7">
+                <tbody>
+                <tr>
+                    <td class="block-text" data-clonable="true" align="left" style="padding: 31px 50px 0px;">
+                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                            <div style="text-align: center;"><span style="font-size: 18px; line-height: 36px; color: #414e55;">Hi&nbsp;Dear Customer</span></div>
+                            <div style="text-align: center;"><span style="font-size: 18px; line-height: 36px; color: #ff9900;">Thank you for contacting Voucher Money.</span></div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="main" width="640" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" align="center" style="background-color: #ffffff; display: table;" data-type="imgtxt" id="5ce427e8-7f96-8cd4-b49c-b24503cec6ea">
+                <tbody>
+                <tr>
+                    <td class="image-text" align="left" style="padding: 0px 50px;">
+                        <table class="image-in-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="left">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <table cellspacing="0" cellpadding="0" border="0" align="left">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" style="padding: 0px 10px 10px 0px;"><img src="https://agilecrm.s3.amazonaws.com/editor/email/betcart/search_01_png_1501938554741.png" style="display: block; max-width: 280px;" width="280" data-maxwidth="350" height="206" border="0" align="left" alt="" id="00fe3e62-e95b-6827-66f9-a116acdee593" /></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="textFix" style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;">
+                                        <p style="text-align: justify;"><span style="font-family: helvetica, arial, sans-serif;">&nbsp;</span></p>
+                                        <p><span style="font-family: helvetica, arial, sans-serif; font-size: 16px; color: #ff9900;"><strong>We Found Your Voucher Money</strong></span></p>
+                                        <p><span style="font-family: helvetica, arial, sans-serif;">&nbsp;</span></p>
+                                        <p style="text-align: justify;"><span style="font-size: 14px; color: #808080;">We have found your VoucherMoney through information you provided, find below the new VoucherMoney code for the remaining balance of your latest purchase.</span></p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="52c4ae96-eeac-f98a-c56c-cf0799e92319">
+                <tbody>
+                <tr>
+                    <td class="divider-simple" style="padding: 0px 50px;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                            <tbody>
+                            <tr>
+                                <td width="100%" height="15px"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="main" width="640" style="border: 0px; background-color: #ffffff; display: table;" cellspacing="0" cellpadding="0" border="0" align="center" data-type="line" id="06c94c17-d3cf-7f9d-42d3-7a7d7594eaf7">
+                <tbody>
+                <tr>
+                    <td class="divider-simple" style="padding: 1px 50px 0px;">
+                        <table width="100%" cellspacing="0" cellpadding="0" border="0" style="border-top: 1px solid #DADFE1;">
+                            <tbody>
+                            <tr>
+                                <td width="100%" height="15px"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <table width="640" class="main" cellspacing="0" cellpadding="0" border="0" style="background-color: #eeeeee; display: table;" align="center" data-type="text-block" id="aedf6e1f-6064-87d4-eb33-15e5fcb07ffa" data-color="true">
+                <tbody>
+                <tr>
+                    <td class="block-text" data-clonable="true" align="left" style="padding: 10px 50px 10px 50px;">
+                        <div style="margin: 0px 0px 10px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 12px; line-height: 16px; outline: none;" class="textFix">
+                            <div style="text-align: center;"><span style="color: #808080;">Copyright &copy; 2017 Voucher Money&nbsp;all rights reserved.</span><br /><a href="{{{unsubscribe_link}}}" target="_blank" rel="noopener">unsubscribe</a></div>
+                            <div style="text-align: center;">&nbsp;</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
